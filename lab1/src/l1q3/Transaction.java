@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  *
- * @author Chin Jia Xiong
+ * @author HP
  */
 public class Transaction {
     private Date date;
@@ -13,11 +13,11 @@ public class Transaction {
     private double balance;
     private String description;
     
-    public Transaction(char type, double amnt, double bal, String desc){
+    public Transaction(char type, double amount, double balance, String description){
         this.type = type;
-        amount = amnt;
-        balance = bal;
-        description = desc;
+        amount = amount;
+        balance = balance;
+        description = description;
         date = new Date();
     }
     
@@ -37,24 +37,24 @@ public class Transaction {
        return amount;
    }
    
-   public void setAmount(double amnt){
-       amount = amnt;
+   public void setAmount(double amount){
+       amount = amount;
    }
    
    public double getBalance(){
        return balance;
    }
    
-   public void setBalance(double bal){
-       balance = bal;
+   public void setBalance(double balance){
+       balance = balance;
    }
    
    public String getDescription(){
        return description;
    }
    
-   public void setDescription(String desc){
-       description = desc;
+   public void setDescription(String description){
+       description = description;
    }
    
 }
