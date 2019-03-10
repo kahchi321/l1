@@ -24,7 +24,7 @@ public class Append {
             p.println();
             p.println("Thursday, 10 May 2019");
             p.println();
-            p.println("It’s me again. Finally, it’s the end of the term and the DS class has finished! I think I did XXX (your performance) in this course.");
+            p.println("It’s me again. Finally, it’s the end of the term and the DS class has finished! I think I did well in this course.");
             p.close();
         }catch(Exception e){
             System.out.println("Error");
