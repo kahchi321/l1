@@ -12,7 +12,9 @@ public class Main {
         System.out.println(acc.getBalance());
         System.out.println(acc.getMonthlyInterest());
         System.out.println(acc.getDateCreated());
-        System.out.println("!!SEPERATOR FOR QUESTION 4 ALERT!!");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
         Account1 acc2 = new Account1("George", 1122, 1000, 1.5);
         acc2.deposit(30);
         acc2.deposit(40);
@@ -30,7 +32,6 @@ public class Main {
             System.out.println(i.getAmount());
             System.out.println(i.getBalance());
             System.out.println(i.getDescription());
-            System.out.println("--------------------");
         }
     }
 }
