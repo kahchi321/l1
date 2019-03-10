@@ -2,10 +2,6 @@ package l1q3;
 
 import java.util.Date;
 
-/**
- *
- * @author Chin Jia Xiong
- */
 public class Account {
     private int id=0;
     private double balance=0;
@@ -59,16 +55,16 @@ public class Account {
         return getMonthlyInterestRate() / 100.0 * balance;
     }
     
-    public void withdraw(double amnt){
-        if(amnt <  balance){
-            balance -= amnt;
+    public void withdraw(double amount){
+        if(amount <  balance){
+            balance -= amount;
         }
         else{
-            System.out.println("not enough balance!");
+            System.out.println("Not Enough Balance");
         }
     }
     
-    public void deposit(double amnt){
-        balance += amnt;
+    public void deposit(double amount){
+        balance += amount;
     }
 }
