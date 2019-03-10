@@ -2,7 +2,7 @@ package l1q3;
 
 /**
  *
- * @author Chin Jia Xiong
+ * @author HP
  */
 public class Main {
     public static void main(String[] args) {
