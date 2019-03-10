@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Chin Jia Xiong
+ * @author HP
  */
 public class Account1 extends Account{
     private String name;
@@ -29,27 +29,27 @@ public class Account1 extends Account{
     }
     
     @Override
-    public void withdraw(double amnt){
-        if(this.getBalance() > amnt){
-            Scanner input = new Scanner(System.in);
-            System.out.print("Enter description for deposit : ");
-            String desc = input.nextLine();
-            this.setBalance(this.getBalance() - amnt);
-            Transaction t = new Transaction('W', amnt, this.getBalance(), desc);
+    public void withdraw(double amount){
+        if(this.getBalance() > amount){
+            Scanner s = new Scanner(System.in);
+            System.out.print("Enter description for deposit: ");
+            String de = s.nextLine();
+            this.setBalance(this.getBalance() - amount);
+            Transaction t = new Transaction('W', amount, this.getBalance(), de);
             transactions.add(t);
         }
         else{
-            System.out.println("Not enough balance!");
+            System.out.println("Not Enough Balance!");
         }
     }
     
     @Override
-    public void deposit(double amnt){
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter description for deposit : ");
-        String desc = input.nextLine();    
-        this.setBalance(this.getBalance() + amnt);
-        Transaction t = new Transaction('D', amnt, this.getBalance(), desc);
+    public void deposit(double amount){
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter description for deposit: ");
+        String de = s.nextLine();    
+        this.setBalance(this.getBalance() + amount);
+        Transaction t = new Transaction('D', amount, this.getBalance(), de);
         transactions.add(t);
     }
     
